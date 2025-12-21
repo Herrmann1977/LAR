@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lar Group Prime Services</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+    <link href="modelo3css.css" rel="stylesheet">
+    <style>
+        :root { --gold: #D4AF37; --dark: gray; --nude: #E8D5C4; }
+        body { background-image: url("/.images/casa3.jpg") ;backfont-family: 'Inter', sans-serif; background-color: var(--dark); color: white; scroll-behavior: smooth; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .text-gold { color: var(--gold); }
+        .bg-gold { background-color: var(--gold); }
+        .border-gold { border-color: var(--gold); }
+        .btn-prime { background-color: var(--gold); color: gray; font-weight: bold; transition: 0.3s; }
+        .btn-prime:hover { background-color: var(--nude); transform: translateY(-2px); }
+    </style>
+</head>
+<body>
+
+    <nav class="flex justify-between items-center p-6 border-b border-gray-800 sticky top-0 bg-[#0A0A0A]/95 backdrop-blur-md z-50">
+        <div>
+            <img src="./images/logo1.jpeg" 70px>
+        </div>
+        <div class="leading-tight">
+            <span class="text-xl font-serif tracking-[0.2em] text-gold uppercase">Lar Group</span>
+            <span class="block text-[10px] tracking-[0.3em] text-gray-400 uppercase">Prime Services</span>
+            
+        </div>
+        
+        <div class="hidden lg:flex space-x-8 text-xs font-semibold tracking-widest uppercase">
+            <a href="#home" data-i18n="nav-home">Home</a>
+            <a href="#sobre" data-i18n="nav-about">Sobre</a>
+            <a href="#servicos" data-i18n="nav-services">Serviços</a>
+            <a href="#contato" data-i18n="nav-contact">Contato</a>
+        </div>
+
+        <div class="flex items-center space-x-4">
+            <select onchange="changeLang(this.value)" class="bg-transparent border border-gray-700 text-[10px] p-1 rounded outline-none text-gold">
+                               
+                <option value="pt">PT</option>
+                <option value="de">DE</option>
+                <option value="en">EN</option>
+            </select>
+            <div class="text-[9px] text-gray-500 border-l border-gray-800 pl-4 uppercase tracking-tighter">
+                Visits: <span id="visit-count" class="text-gold">...</span>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="relative h-[80vh] flex items-center justify-center text-center px-6 border-b border-gray-900">
+        <div class="relative z-10">
+            <h1 id="hero-title" class="text-4xl md:text-6xl font-serif mb-6 leading-tight" data-i18n="hero-title">
+                Limpeza de Luxo.<br><span class="text-gold">Seu Padrão Premium.</span>
+            </h1>
+            <p id="hero-desc" class="text-black-400 max-w-2xl mx-auto mb-10" data-i18n="hero-desc">Especialistas em apartamentos de férias, hotéis e pós-obra na Alemanha.</p>
+            
+        </div>
+    </header>
+
+    <section id="sobre" class="py-20 px-6 bg-[#0F0F0F]">
+        <div class="absolute inset-0 z-0 opacity-40">
+            <img src="./images/casa3.jpeg" alt="Luxury Interior" class="w-full h-full object-cover">
+        </div>
+        <div class="max-w-12xl mx-auto grid md:grid-cols-2 ">
+            <h2 class="font-serif text-3xl mb-6 text-gold" data-i18n="nav-about">Sobre a empresa</h2>
+             <div class="space-y-4 text-gray-300">
+                
+                <p>Gestão de Enxoval & Lavanderia (Disponível em DE, PT, UK)</p>
+                <p>Oferecemos uma solução completa de hotelaria para que você não precise se preocupar com nada. Disponível para residências, hotéis e alojamentos locais:</p>
+                <p>* Aluguel de Roupas de Cama Premium: Fornecemos lençóis de alta contagem de fios, Bettbezug (capas de edredom) e Kissenbezug (fronhas) sempre impecáveis.</p>
+                <p>* Kits de Banho: Toalhas de corpo e rosto de alta gramatura, tapetes de banheiro coordenados e roupões luxuosos.</p>
+                <p>* Cozinha & Copa: Panos de cozinha higienizados e prontos para uso.</p>
+                <p>* Serviços de Lavanderia: Lavagem, secagem e passadoria profissional com padrões de higiene hospitalar e hoteleira.</p>
+
+                 
+                </p>
+                <p data-i18n="contact-loc"><strong>Localização:</strong> Alemanha</p>
+            </div>                      
+        </div>
+    </section>
+
+    <section id="servicos" class="py-20 px-6 bg-[#0F0F0F]">
+        <div class="absolute inset-0 z-0 opacity-40">
+            <img src="./images/casa3.jpeg" alt="Luxury Interior" class="w-full h-full object-cover">
+        </div>
+        <div class="max-w-12xl mx-auto grid md:grid-cols-2 ">
+            <h2 class="font-serif text-3xl mb-6 text-gold" data-i18n="nav-services">Serviços</h2>
+             <div class="space-y-4 text-gray-300">
+                <p>Nossos Serviços na Alemanha (Main Branch)
+                Nossa expertise alemã é dividida em categorias técnicas para garantir a máxima eficiência:</p>
+                <p>* Pós-Obra (Baureinigung / Endreinigung): Limpeza técnica detalhada após construções ou reformas, removendo resíduos finos e preparando o imóvel para a entrega imediata.</p>
+                <p>* Hotéis & Ferienwohnung: Gestão de limpeza para hotelaria e apartamentos de temporada, com foco na hospitalidade e padrão de luxo.</p>
+                <p>* Práxis & Büros (Unterhaltsreinigung): Limpeza de manutenção regular para consultórios médicos e escritórios, garantindo higiene rigorosa e um ambiente profissional.</p>
+                <p>* Limpeza Profunda (Grundreinigung): Uma higienização pesada e detalhada de todas as superfícies, ideal para renovar o ambiente.</p>
+                <p>* Limpeza Intermediária (Zwischenreinigung): Serviço focado em estadias longas, garantindo que o hóspede ou morador mantenha o conforto durante todo o período.</p>
+                <p>* Limpeza de Vidros (Fensterreinigung): Limpeza profissional de janelas, fachadas e superfícies envidraçadas com acabamento sem manchas.</p>
+                <p>* Limpeza de Mudança (Umzugreinigung): Preparação completa para quem está entrando em um novo imóvel ou entregando as chaves.</p>
+
+                <p>🇵🇹 Filial Portugal: Soluções Integradas (Prime Home Care)</p>
+                <p>Em Portugal, expandimos nosso portfólio para oferecer uma solução 360° para o seu imóvel:</p>
+                <p>* Manutenção & Construção: Serviços profissionais de Pintura, Reparos, instalação de Pisos e Azulejos em geral.</p>
+                <p>* Áreas Externas: Limpeza técnica de Calhas, conservação e limpeza profissional de Jardins.</p>
+                <p>* Segmento Náutico: Serviços exclusivos para Iates a bordo, com tratamento de materiais sensíveis e higienização interna.</p>
+                <p>* Residencial de Elite: Limpeza de Casas de Alto Padrão e gestão de Airbnb.
+                <p>* Pós-Obra: A mesma excelência em limpeza técnica após grandes intervenções.</p>
+
+                <p>🇬🇧 Filial Londres: Especialidades (London Cleaning)</p>
+                <p>Atuamos no coração de Londres com foco em ambientes corporativos e hospitalidade:</p>
+                <p>* Hotelaria & Vacation Rentals: Serviços de limpeza para Hotéis e Casas de Férias com alto giro.</p>
+                <p>* Corporate: Limpeza especializada para Büros (Escritórios) e Práxis (Consultórios), focando na organização e desinfecção de espaços comerciais.    <p>23232</p>
+                                
+                <p data-i18n="contact-loc"><strong>Localização:</strong> Alemanha</p>
+            </div>                      
+        </div>
+    </section>
+
+    <section id="contato" class="py-20 px-6 bg-[#0F0F0F]">
+        <div class="absolute inset-0 z-0 opacity-40">
+            <img src="./images/casa3.jpeg" alt="Luxury Interior" class="w-full h-full object-cover">
+        </div>
+        <div class="max-w-12xl mx-auto grid md:grid-cols-2 ">
+            <div>
+                <h2 class="font-serif text-3xl mb-6 text-gold" data-i18n="contact-title">Dados de Contato</h2>
+                <div class="space-y-4 text-gray-300">
+                    <p><strong>Tel 1:</strong> +49 0173 4824163</p>
+                    <p><strong>Tel 2:</strong> 01525 2376197</p>
+                    <p><strong>E-mail:</strong> reinigungslar@hotmail.com</p>
+                    <p data-i18n="contact-loc"><strong>Localização:</strong> Alemanha</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    
+
+    <footer class="p-10 text-center text-gray-700 text-[10px] tracking-[0.3em] uppercase">
+        © 2025 Lar Group Prime Services | <span id="display-visits"></span> Acessos
+    </footer>
+
+    <script>
+        // Sistema de Tradução Completo
+        const translations = {
+            
+            de: {
+                "nav-home": "Startseite", "nav-about": "Über uns", "nav-services": "Leistungen", "nav-contact": "Kontakt",
+                "hero-title": "Luxusreinigung.<br><span class='text-gold'>Ihr Premium-Standard.</span>",
+                "hero-desc": "Spezialisten für Ferienwohnungen, Hotels und Baureinigung in Deutschland.",
+                "btn-quote": "Angebot Anfordern", "contact-title": "Kontaktdaten",
+                "contact-loc": "Standort: Deutschland", "eval-title": "Ihre Bewertung"
+            },
+            pt: {
+                "nav-home": "Home", "nav-about": "Sobre", "nav-services": "Serviços", "nav-contact": "Contato",
+                "hero-title": "Limpeza de Luxo.<br><span class='text-gold'>Seu Padrão Premium.</span>",
+                "hero-desc": "Especialistas em apartamentos de férias, hotéis e pós-obra na Alemanha.",
+                "btn-quote": "Solicitar Orçamento", "contact-title": "Dados de Contato",
+                "contact-loc": "Localização: Alemanha", "eval-title": "Sua Avaliação"
+            },
+            en: {
+                "nav-home": "Home", "nav-about": "About", "nav-services": "Services", "nav-contact": "Contact",
+                "hero-title": "Luxury Cleaning.<br><span class='text-gold'>Your Premium Standard.</span>",
+                "hero-desc": "Specialists in holiday rentals, hotels and post-construction cleaning in Germany.",
+                "btn-quote": "Get a Quote", "contact-title": "Contact Details",
+                "contact-loc": "Location: Germany", "eval-title": "Your Evaluation"
+            }
+        };
+
+        function changeLang(lang) {
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                el.innerHTML = translations[lang][key];
+            });
+            document.documentElement.lang = lang;
+        }
+
+        // Contador de Visitas Simples (Local Storage)
+        function updateCounter() {
+            let visits = localStorage.getItem('visitCount') || 0;
+            visits = parseInt(visits) + 1;
+            localStorage.setItem('visitCount', visits);
+            document.getElementById('visit-count').innerText = visits;
+            document.getElementById('display-visits').innerText = visits;
+        }
+
+        window.onload = updateCounter;
+    </script>
+</body>
+</html>
